@@ -2,9 +2,16 @@
 import { ref, watch } from 'vue'
 import GirlSelect from './components/GirlSelect.vue'
 import StoryShow from './components/StoryShow.vue'
-import { useGirlsStore } from '@/stores/modules/girls'
-import { backgroundObj } from '@/utils/imgUrl'
+import { useGirlsStore } from '@/stores/index.js'
+import { useStoryStore } from '@/stores/index.js'
+import { storeToRefs } from 'pinia'
 
+// 进入页面更换背景用
+const body = document.body
+
+// 拿故事
+const storyStore = useStoryStore()
+const { stories } = storeToRefs(storyStore)
 // 拿女主名
 const girlStore = useGirlsStore()
 
@@ -12,11 +19,23 @@ const girlStore = useGirlsStore()
 const selected = ref('白雪乃爱')
 watch(selected, (newValue) => {
   console.log(newValue)
+  selectGirl()
 })
 
-// 进入页面更换背景
-const body = document.body
-body.style.backgroundImage = `url(${backgroundObj.Meguru})`
+// 故事
+const story = ref({})
+
+// 选择女主
+const selectGirl = () => {
+  story.value = stories.value.filter(
+    (item) => item.girlName === selected.value
+  )[0]
+  // 修改背景
+  body.style.backgroundImage = `url(${story.value.backgroundImg})`
+  // console.log(story.value)
+}
+
+selectGirl()
 </script>
 
 <template>
@@ -29,14 +48,14 @@ body.style.backgroundImage = `url(${backgroundObj.Meguru})`
       ></GirlSelect>
     </el-header>
     <el-main>
-      <StoryShow></StoryShow>
+      <StoryShow :story="story"></StoryShow>
     </el-main>
   </el-container>
 </template>
 
 <style lang="less" scoped>
 .el-main {
-  opacity: 0.9;
+  opacity: 0.75;
   background-color: #fff;
   // min-height: 800px;
 }

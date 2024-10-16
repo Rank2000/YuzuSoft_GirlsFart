@@ -10,3 +10,4 @@ export default pinia
 
 export * from './modules/user.js'
 export * from './modules/story.js'
+export * from './modules/girls.js'

@@ -1,7 +1,7 @@
 <script setup>
 import { defineProps, defineEmits } from 'vue'
 
-const props = defineProps({
+defineProps({
   girlsArr: {
     required: true, // 必须传
     type: Array // 类型
@@ -13,7 +13,7 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue'])
 
-console.log(props.modelValue)
+// console.log(props.modelValue)
 </script>
 
 <template>
@@ -32,7 +32,9 @@ console.log(props.modelValue)
         :value="item"
       />
     </el-select>
-    <div class="girl">当前女主：{{ modelValue }}</div>
+    <div class="girl" style="color: orange; font-size: 22px; font-weight: 500">
+      当前女主：{{ modelValue }}
+    </div>
   </div>
 </template>
 

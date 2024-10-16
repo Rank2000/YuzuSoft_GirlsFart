@@ -16,9 +16,12 @@ import Kanna from '@/assets/background/Kanna.jpg'
 import Natsume from '@/assets/background/Natsume.jpg'
 import Nozomi from '@/assets/background/Nozomi.jpg'
 import Mei from '@/assets/background/Mei.jpg'
-import Mei2 from '@/assets/background/Kanna.jpg'
+import Mei2 from '@/assets/background/Mei2.jpg'
 import Suzune from '@/assets/background/Suzune.jpg'
-
+// 天使嚣嚣背景图片
+import Noa from '@/assets/background/Noa.jpg'
+import Amane from '@/assets/background/Amane.jpg'
+import Kurumi from '@/assets/background/Kurumi.jpg'
 // 欢迎页背景图
 import bgWelcome from '@/assets/background/bg.jpg'
 
@@ -44,6 +47,9 @@ export const backgroundObj = {
   Mei,
   Mei2,
   Suzune,
+  Noa,
+  Amane,
+  Kurumi,
   bgWelcome
 }
 

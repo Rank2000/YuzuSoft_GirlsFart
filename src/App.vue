@@ -2,11 +2,9 @@
 // 导入中文包
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 // import { backgroundObj } from './utils/imgUrl'
-
-const body = document.body
+// const body = document.body
 // body.style.backgroundImage = `url(${backgroundObj.Kanna})`
-
-console.log(body)
+// console.log(body)
 </script>
 
 <template>

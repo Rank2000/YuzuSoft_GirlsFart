@@ -6,6 +6,8 @@ defineProps({
     type: Object
   }
 })
+
+// console.log(props.story)
 </script>
 
 <template>
@@ -15,27 +17,19 @@ defineProps({
     <div class="header">
       <!-- 故事标题 -->
       <div class="title">
-        <h3>白雪乃爱放屁</h3>
+        <h3>{{ story.title }}</h3>
       </div>
       <!-- 故事封面 -->
       <div class="cover">
-        <img src="@/assets/storyImg/noa_fart.png" alt="" />
+        <img :src="story.coverImg" alt="" />
       </div>
     </div>
     <!-- 故事身体-内容 -->
-    <div class="content">
-      <p>
-        乃爱放屁乃爱放屁乃爱放屁乃爱放屁乃爱放屁乃爱放屁乃爱放屁乃爱放屁乃爱放屁乃爱放屁
-      </p>
-      <p>乃爱放屁</p>
-      <div class="cg">
-        <img src="@/assets/storyImg/noa_fart1.jpg" alt="" />
-      </div>
-    </div>
+    <div class="content" v-html="story.content"></div>
   </div>
 </template>
 
-<style lang="less" scoped>
+<style lang="less">
 .story {
   .header {
     // background-color: greenyellow;、
@@ -59,11 +53,15 @@ defineProps({
   }
   .content {
     padding-top: 10px;
-    background-color: skyblue;
+    // background-color: skyblue;
     min-height: 300px;
     p {
       text-indent: 2em;
       font-size: 18px;
+      line-height: 30px;
+      .fart {
+        color: rgb(223, 223, 31);
+      }
     }
     // cg插画
     .cg {
