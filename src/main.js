@@ -4,6 +4,8 @@ import router from './router'
 
 import pinia from '@/stores/index.js'
 
+import './style/base.less'
+
 const app = createApp(App)
 
 app.use(pinia)

@@ -1,8 +1,26 @@
 <script setup>
-const s = 1
-console.log(s)
+// 导入中文包
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+// import { backgroundObj } from './utils/imgUrl'
+
+const body = document.body
+// body.style.backgroundImage = `url(${backgroundObj.Kanna})`
+
+console.log(body)
 </script>
 
 <template>
-  <router-view></router-view>
+  <div>
+    <!-- 全局配置 中文包 -->
+    <el-config-provider :locale="zhCn">
+      <!-- 路由出口 -->
+      <router-view></router-view>
+    </el-config-provider>
+  </div>
 </template>
+
+<style lang="less" scoped>
+div {
+  min-height: 2000px;
+}
+</style>

@@ -20,6 +20,10 @@ const router = createRouter({
         {
           path: '/yuzusoft/analyse',
           component: () => import('@/views/analyse/AnalysePage.vue')
+        },
+        {
+          path: '/yuzusoft/user',
+          component: () => import('@/views/user/UserProfile.vue')
         }
       ]
     }
