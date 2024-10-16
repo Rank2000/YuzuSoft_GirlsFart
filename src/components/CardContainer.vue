@@ -32,5 +32,6 @@ defineProps({
   min-height: 100%;
   box-sizing: border-box;
   margin: 0 auto;
+  opacity: 0.9;
 }
 </style>

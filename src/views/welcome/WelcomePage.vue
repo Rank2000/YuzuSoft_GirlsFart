@@ -17,6 +17,10 @@ const routerJump = (path) => {
   emit('jump', path)
   router.push(path)
 }
+
+const sayCiallo = () => {
+  ElMessage.success('Ciallo')
+}
 </script>
 
 <template>
@@ -43,7 +47,7 @@ const routerJump = (path) => {
         <el-button type="success" round @click="routerJump('/yuzusoft/analyse')"
           >放屁分析</el-button
         >
-        <el-button type="warning" round @click="console.log(1)"
+        <el-button type="warning" round @click="sayCiallo"
           >Ciallo～(∠・ω・)⌒☆</el-button
         >
       </div>

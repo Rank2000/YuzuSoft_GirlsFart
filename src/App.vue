@@ -21,6 +21,6 @@ console.log(body)
 
 <style lang="less" scoped>
 .app {
-  min-height: 1000px;
+  min-height: 800px;
 }
 </style>
