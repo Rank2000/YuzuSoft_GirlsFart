@@ -10,7 +10,7 @@ console.log(body)
 </script>
 
 <template>
-  <div>
+  <div class="app">
     <!-- 全局配置 中文包 -->
     <el-config-provider :locale="zhCn">
       <!-- 路由出口 -->
@@ -20,7 +20,7 @@ console.log(body)
 </template>
 
 <style lang="less" scoped>
-div {
-  min-height: 2000px;
+.app {
+  min-height: 1000px;
 }
 </style>

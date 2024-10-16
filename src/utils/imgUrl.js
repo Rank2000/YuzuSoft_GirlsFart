@@ -19,6 +19,9 @@ import Mei from '@/assets/background/Mei.jpg'
 import Mei2 from '@/assets/background/Kanna.jpg'
 import Suzune from '@/assets/background/Suzune.jpg'
 
+// 欢迎页背景图
+import bgWelcome from '@/assets/background/bg.jpg'
+
 // 女主头像
 import noa_avatar from '@/assets/galgame_girls_avatar/白雪乃爱头像.png'
 
@@ -40,7 +43,8 @@ export const backgroundObj = {
   Nozomi,
   Mei,
   Mei2,
-  Suzune
+  Suzune,
+  bgWelcome
 }
 
 // 导出女主头像对象
