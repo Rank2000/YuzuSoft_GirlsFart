@@ -1,6 +1,8 @@
 <script setup>
 import { useUserStore } from '@/stores'
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+
 const userStore = useUserStore()
 
 // logo 跳转柚子社官网
@@ -12,8 +14,10 @@ const jumpToYuzuSoft = () => {
 const changeActiveIndex = (value) => {
   activeIndex.value = value
 }
+
+const router = useRouter()
 // 菜单栏活动状态
-const activeIndex = ref('/yuzusoft/welcome')
+const activeIndex = ref(router.currentRoute.value.path)
 </script>
 
 <template>
@@ -38,7 +42,7 @@ const activeIndex = ref('/yuzusoft/welcome')
       <template #title>
         <div class="myInfo">
           <el-avatar shape="circle" :size="50" :src="userStore.avatar" />
-          <div>柚子厨正恶心</div>
+          <div>柚子厨0721</div>
         </div>
       </template>
       <el-menu-item index="/yuzusoft/user">用户中心(暂无)</el-menu-item>
