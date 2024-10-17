@@ -19,7 +19,26 @@ const router = createRouter({
         },
         {
           path: '/yuzusoft/analyse',
-          component: () => import('@/views/analyse/AnalysePage.vue')
+          component: () => import('@/views/analyse/AnalysePage.vue'),
+          redirect: '/yuzusoft/analyse/allGirls',
+          children: [
+            {
+              path: '/yuzusoft/analyse/allGirls',
+              component: () => import('@/views/analyse/AnalyseAllGirls.vue')
+            },
+            {
+              path: '/yuzusoft/analyse/fartCount',
+              component: () => import('@/views/analyse/AnalyseFartCount.vue')
+            },
+            {
+              path: '/yuzusoft/analyse/fartSmell',
+              component: () => import('@/views/analyse/AnalyseFartSmell.vue')
+            },
+            {
+              path: '/yuzusoft/analyse/poop',
+              component: () => import('@/views/analyse/AnalysePoop.vue')
+            }
+          ]
         },
         {
           path: '/yuzusoft/user',
