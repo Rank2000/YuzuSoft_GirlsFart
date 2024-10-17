@@ -41,6 +41,10 @@ const router = createRouter({
           ]
         },
         {
+          path: 'yuzusoft/art',
+          component: () => import('@/views/art/ArtPage.vue')
+        },
+        {
           path: '/yuzusoft/user',
           component: () => import('@/views/user/UserProfile.vue')
         }

@@ -38,6 +38,7 @@ const activeIndex = ref(router.currentRoute.value.path)
     <el-menu-item index="/yuzusoft/welcome">欢迎页面</el-menu-item>
     <el-menu-item index="/yuzusoft/story">放屁故事</el-menu-item>
     <el-menu-item index="/yuzusoft/analyse">放屁分析</el-menu-item>
+    <el-menu-item index="/yuzusoft/art">放屁艺术</el-menu-item>
     <el-sub-menu>
       <template #title>
         <div class="myInfo">
