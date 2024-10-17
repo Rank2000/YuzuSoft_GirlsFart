@@ -29,15 +29,15 @@ body.style.backgroundImage = 'url()'
             <el-icon><icon-menu /></el-icon>
             <span>排行</span>
           </template>
-          <el-menu-item index="/yuzusoft/analyse/fartCount">
+          <el-menu-item index="/yuzusoft/analyse/fartSmell">
             <el-icon><User /></el-icon>
             <span>屁臭排行</span>
           </el-menu-item>
-          <el-menu-item index="/yuzusoft/analyse/fartSmell">
+          <el-menu-item index="/yuzusoft/analyse/fartCount">
             <el-icon><User /></el-icon>
             <span>屁量排行</span>
           </el-menu-item>
-          <el-menu-item index="/yuzusoft/analyse/poop">
+          <el-menu-item index="/yuzusoft/analyse/poopCount">
             <el-icon><User /></el-icon>
             <span>便意排行</span>
           </el-menu-item>

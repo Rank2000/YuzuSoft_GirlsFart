@@ -35,7 +35,7 @@ const router = createRouter({
               component: () => import('@/views/analyse/AnalyseFartSmell.vue')
             },
             {
-              path: '/yuzusoft/analyse/poop',
+              path: '/yuzusoft/analyse/poopCount',
               component: () => import('@/views/analyse/AnalysePoop.vue')
             }
           ]

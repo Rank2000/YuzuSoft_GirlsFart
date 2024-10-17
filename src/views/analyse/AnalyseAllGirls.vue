@@ -8,7 +8,7 @@ const girlsStore = useGirlsStore()
 const dialogRef = ref()
 // 打开弹框
 const openDialog = (item) => {
-  console.log(item.name)
+  // console.log(item.name)
   dialogRef.value.open(item)
 }
 </script>
@@ -50,10 +50,12 @@ const openDialog = (item) => {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  transition: all 0.5;
   cursor: pointer;
+  transition: all 0.5s;
+  opacity: 1;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    opacity: 0.5;
   }
   img {
     width: 80%;
