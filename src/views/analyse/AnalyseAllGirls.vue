@@ -1,23 +1,29 @@
+<script setup>
+import { useGirlsStore } from '@/stores'
+import GirlInfo from './components/GirlInfo.vue'
+import { ref } from 'vue'
+
+const girlsStore = useGirlsStore()
+
+const dialogRef = ref()
+// 打开弹框
+const openDialog = (item) => {
+  console.log(item.name)
+  dialogRef.value.open(item)
+}
+</script>
+
 <template>
   <div class="all-girls">
     <el-row :gutter="20">
-      <el-col :span="6"
-        ><div class="grid-content ep-bg-purple" />
-        1</el-col
-      >
-      <el-col :span="6"
-        ><div class="grid-content ep-bg-purple" />
-        2</el-col
-      >
-      <el-col :span="6"
-        ><div class="grid-content ep-bg-purple" />
-        3</el-col
-      >
-      <el-col :span="6"
-        ><div class="grid-content ep-bg-purple" />
-        4</el-col
-      >
+      <el-col :span="6" v-for="item in girlsStore.girlsData" :key="item.name">
+        <div class="all-girls-content" @click="openDialog(item)">
+          <img :src="item.img_url" alt="" />
+          <span>{{ item.name }}</span>
+        </div>
+      </el-col>
     </el-row>
+    <GirlInfo ref="dialogRef"></GirlInfo>
   </div>
 </template>
 
@@ -30,11 +36,28 @@
 }
 .el-col {
   border-radius: 4px;
-  border: 1px solid #000;
+  margin-top: 20px;
+  // border: 1px solid #000;
 }
 
-.grid-content {
+.all-girls-content {
+  padding-top: 10px;
   border-radius: 4px;
-  min-height: 36px;
+  border: 3px solid #ccc;
+  // min-height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.5;
+  cursor: pointer;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
+  img {
+    width: 80%;
+    border-radius: 50%;
+  }
 }
 </style>

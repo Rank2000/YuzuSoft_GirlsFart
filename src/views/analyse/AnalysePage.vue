@@ -1,5 +1,5 @@
 <script setup>
-import { Location, Menu as IconMenu, Setting } from '@element-plus/icons-vue'
+import { Menu as IconMenu, Setting } from '@element-plus/icons-vue'
 
 const body = document.body
 body.style.backgroundImage = 'url()'
@@ -27,7 +27,7 @@ body.style.backgroundImage = 'url()'
           <!-- 多级菜单的标题 - 具名插槽 title-->
           <template #title>
             <el-icon><icon-menu /></el-icon>
-            <span>放屁排行</span>
+            <span>排行</span>
           </template>
           <el-menu-item index="/yuzusoft/analyse/fartCount">
             <el-icon><User /></el-icon>
@@ -37,11 +37,11 @@ body.style.backgroundImage = 'url()'
             <el-icon><User /></el-icon>
             <span>屁量排行</span>
           </el-menu-item>
+          <el-menu-item index="/yuzusoft/analyse/poop">
+            <el-icon><User /></el-icon>
+            <span>便意排行</span>
+          </el-menu-item>
         </el-sub-menu>
-        <el-menu-item index="/yuzusoft/analyse/poop">
-          <el-icon><Location /></el-icon>
-          <span>便意排行</span>
-        </el-menu-item>
       </el-menu>
     </el-aside>
     <el-container>

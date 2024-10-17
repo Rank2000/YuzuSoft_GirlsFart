@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
+import { avatarObj } from '@/utils/imgUrl.js'
 
 export const useGirlsStore = defineStore('girl', () => {
   const girlsArr = ref([
@@ -51,7 +52,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T0',
         fart_endure: 'T4'
       },
-      img_url: './img/galgame_girls/白雪乃爱头像.png',
+      poop: {
+        poop_count_score: 100,
+        poop_count: 'T0'
+      },
+      img_url: avatarObj.noa_avatar,
       breathe: './audio/breathe/乃爱喘息.wav',
       introduction: `小天使女主角，非常温柔、善良、可爱，喜欢吃薯片，喝可乐，还非常闷骚，这
       么可爱的小乃爱，谁不喜欢呢？作为柚子社吃货属性最突出的女主，在变成人类后，乃爱的屁一定很多，
@@ -73,7 +78,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T2.5',
         fart_endure: 'T3.5'
       },
-      img_url: './img/galgame_girls/谷风天音头像.png',
+      poop: {
+        poop_count_score: 25,
+        poop_count: 'T3.5'
+      },
+      img_url: avatarObj.amane_avatar,
       introduction: `雌小鬼+实妹+宅女人设，老实说我个人对这雌小鬼+实妹属性并不是很感兴趣，但其他方面的人设
       我还是很喜欢的，像是喜欢涩涩，捉弄小乃爱，有一定百合倾向这样的感觉。好像看天音和乃爱百合放屁呀。
       天音身体素质没那么好，食量也不算大，而且作息不规律，根据分析应
@@ -92,7 +101,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T1',
         fart_endure: 'T1'
       },
-      img_url: './img/galgame_girls/小云雀来海头像.png',
+      poop: {
+        poop_count_score: 90,
+        poop_count: 'T0.5'
+      },
+      img_url: avatarObj.kurumi_avatar,
       introduction: `大屁股辣妹！而且还是对阿宅好的辣妹！！！开局就有好感度，而且坐在男主学校桌子上，
       这简直是梦。谁会不想被大屁股辣妹坐脸呢？就算只有坐桌上也是非常棒了。想想来海的短裙遮着的巨大臀部，
       在你的位置上留下菊穴喷出的气味。。。好吧，我对她的评价非常高，屁臭，屁量，忍耐能力全高分，主要跟她的大体型和
@@ -110,7 +123,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T1.5',
         fart_endure: 'T0'
       },
-      img_url: './img/galgame_girls/星河辉耶头像.png',
+      poop: {
+        poop_count_score: 93,
+        poop_count: 'T0'
+      },
+      img_url: avatarObj.kaguya_avatar,
       introduction: `星河辉耶--异世界的魔族公主，首先作为一位公主，她的气质非常优雅，
       所以对于放屁这种事肯定是要控制的，因此忍耐能力极强，辉耶没有乃爱那么吃货，但也很喜欢
       吃一些汉堡之类的容易产生臭气的食物，加上块头也不小，我认为她的屁应该很臭，但屁量只是稍微多一点`
@@ -127,7 +144,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3.5',
         fart_endure: 'T0.5'
       },
-      img_url: './img/galgame_girls/高楯欧丽叶头像.png',
+      poop: {
+        poop_count_score: 70,
+        poop_count: 'T1.5'
+      },
+      img_url: avatarObj.orie_avatar,
       introduction: `星河辉耶的贴身侍从，一直跟在她身边。性格非常一板一眼。
       由于不懂变通，有时候会稍显笨拙。不太会用电器，对她来说那都是“异世界的道具”。、
       但她的屁股挺翘，喜欢！但因为要照顾公主，自己的身体是肯定要锻炼好的，
@@ -146,7 +167,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3.5',
         fart_endure: 'T0'
       },
-      img_url: './img/galgame_girls/百里风实花头像.png',
+      poop: {
+        poop_count_score: 50,
+        poop_count: 'T2.5'
+      },
+      img_url: avatarObj.fumika_avatar,
       introduction: `萌系的邻家大姐姐这个属性倒是很喜欢，不过因为是老师，所以总体来讲戏份
       相当少，不过屁股也是挺大的（感觉仅次于来海与辉耶），从坐脸玩法来分析，她应该也懂一些放屁play。
       考虑她老师的体面身份，以及李空舔屁股都没提到味道怎么样，屁臭程度应该一般，屁量肯定不多，不然上课那尴尬了，忍耐能力强一点。`
@@ -163,7 +188,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3',
         fart_endure: 'T4.5'
       },
-      img_url: './img/galgame_girls/明月栞那头像.png',
+      poop: {
+        poop_count_score: 57,
+        poop_count: 'T2'
+      },
+      img_url: avatarObj.kanna_avatar,
       introduction: `栞那年龄都能当男主太奶了，也是很有母性的女主（还有喂奶play），不过
       个人对这类角色不是很感兴趣，线还是推完的，比较有趣的部分是栞那游乐园憋尿，可惜没同意玩
       什么憋尿play，浴室0721漏尿很涩。总的来说没什么能分析屁的情节，大概就是一般吧，不擅长忍耐。
@@ -182,7 +211,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3',
         fart_endure: 'T2'
       },
-      img_url: './img/galgame_girls/四季夏目头像.png',
+      poop: {
+        poop_count_score: 37,
+        poop_count: 'T3'
+      },
+      img_url: avatarObj.natsume_avatar,
       introduction: `枣子姐的足，好涩好涩......旗袍的那个臀部特写......总之，
       夏目的屁股又翘又大，加上性格，还有病弱人设，屁肯定特别臭，虽然作为服务员和高岭之花，
       应该是有控制饮食，屁量不算太多。夏目真的太适合坐脸放屁play了，
@@ -201,7 +234,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T0',
         fart_endure: 'T3.5'
       },
-      img_url: './img/galgame_girls/墨染希头像.png',
+      poop: {
+        poop_count_score: 100,
+        poop_count: 'T0'
+      },
+      img_url: avatarObj.nozomi_avatar,
       introduction: `小希叫起床的cg，那个肥大的屁股（流口水），外加可爱的内裤，这也
       ......也太涩了。我都不敢想这时候她要是“噗~”放个屁男主多爽，不仅能闻到味道，还
       可以观察到她在内裤上的菊穴被屁顶开的痕迹，真好。我记得昂晴有这类xp。可惜这作
@@ -222,7 +259,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T0.5',
         fart_endure: 'T3.5'
       },
-      img_url: './img/galgame_girls/火打谷爱衣头像.png',
+      poop: {
+        poop_count_score: 78,
+        poop_count: 'T1'
+      },
+      img_url: avatarObj.mei_avatar,
       introduction: `怎么说呢，冷门xp集合。。。除了泳装翘臀元素没一个感兴趣的。真要说的话，我
       想看她泳装水中放屁，肯定很棒。身材较小，但运动量大，肯定吃的也多，所以屁不臭但量肯定多。
       从她连可爱的东西也没抵抗力看，忍耐力较弱，请务必穿泳装在水中让我揉揉肚子，然后欣赏放屁。
@@ -240,7 +281,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T4',
         fart_endure: 'T3.5'
       },
-      img_url: './img/galgame_girls/汐山凉音头像.png',
+      poop: {
+        poop_count_score: 20,
+        poop_count: 'T4'
+      },
+      img_url: avatarObj.suzune_avatar,
       introduction: `小厨娘好耶，合法萝莉，虽然娇小可臀部却很大。做甜点也好吃！希望凉音姐穿牛仔裤坐
       我脸上放屁。凉音对食材很挑剔，基本都选好的，所以几乎不会吃坏肚子，但她喜欢喝酒等，所以喝醉了忍耐能力
       肯定下降，凉音身材小加上食量不大，屁应该很少，不过凉音强烈反对昂晴走后门，众所周知越是抵触越有鬼，所以她肯定
@@ -259,7 +304,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3',
         fart_endure: 'T3'
       },
-      img_url: './img/galgame_girls/三司绫濑头像.png',
+      poop: {
+        poop_count_score: 33,
+        poop_count: 'T3'
+      },
+      img_url: avatarObj.ayase_avatar,
       introduction: `黑裤袜不错，就是脾气不太好。一般这种设定的屁都比较臭，
       量感觉一般，忍耐能力一般
       `
@@ -276,7 +325,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T4.5',
         fart_endure: 'T1'
       },
-      img_url: './img/galgame_girls/在原七海头像.png',
+      poop: {
+        poop_count_score: 50,
+        poop_count: 'T2.5'
+      },
+      img_url: avatarObj.nanami_avatar,
       introduction: `说真的，这作都两黑裤袜女主了，柚子社到底会不会写裤袜play？
       同理黑裤袜不错，但义妹人设也加分。七海就是很会照顾人的类型，加上可以治愈的超能力
       屁应该不臭也不会太多，忍耐能力比较强，要是请求她的话，也愿意对着男主放屁吧。
@@ -294,7 +347,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3',
         fart_endure: 'T3'
       },
-      img_url: './img/galgame_girls/式部茉优头像.png',
+      poop: {
+        poop_count_score: 57,
+        poop_count: 'T2'
+      },
+      img_url: avatarObj.mayu_avatar,
       introduction: `最不感兴趣的一个。。。甚至懒得分析，全一般吧。
       `
     },
@@ -310,7 +367,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T2.5',
         fart_endure: 'T2.5'
       },
-      img_url: './img/galgame_girls/二条院羽月头像.png',
+      poop: {
+        poop_count_score: 61,
+        poop_count: 'T2'
+      },
+      img_url: avatarObj.hazuki_avator,
       introduction: `羽月真的比较接近理想女友了，而且她的涩点跟茉子差不多，
       安全裤屁股加肉腿，好！羽月小姐请穿上紧身裤坐在我脸上放屁！分析屁味比较臭，
       量稍多，所以需要紧身裤帮助忍耐，不过她的忍耐能力也不差。
@@ -328,7 +389,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T5',
         fart_endure: 'T2.5'
       },
-      img_url: './img/galgame_girls/壬生千咲头像.png',
+      poop: {
+        poop_count_score: 10,
+        poop_count: 'T4.5'
+      },
+      img_url: avatarObj.chisaki_avator,
       introduction: `小太阳一般的学妹，感觉不太适合放屁play呢，丛游戏角度分析，
       屁量极少，屁味极淡，忍耐能力不清楚，但忍耐压力不大，应该算比较能忍耐。
       `
@@ -345,7 +410,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T0',
         fart_endure: 'T5'
       },
-      img_url: './img/galgame_girls/朝武芳乃头像.png',
+      poop: {
+        poop_count_score: 100,
+        poop_count: 'T0'
+      },
+      img_url: avatarObj.yoshino_avatar,
       breathe: './audio/breathe/芳乃喘息.wav',
       introduction: `芳乃的黑裤袜，斯哈斯哈~！芳乃也有吃货人设，而且游戏内更是有因为上厕所气味太大不
       让男主进的片段（不敢想她的屁多臭。），而且涩涩时经常漏尿，由此可知芳乃不仅肚子容量大，吃得多，经常忍不住想放屁、漏尿、拉屎，
@@ -366,7 +435,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T0.5',
         fart_endure: 'T0'
       },
-      img_url: './img/galgame_girls/常陆茉子头像.png',
+      poop: {
+        poop_count_score: 93,
+        poop_count: 'T0'
+      },
+      img_url: avatarObj.mako_avatar,
       breathe: './audio/breathe/茉子喘息.wav',
       introduction: `茉子的紧身裤和肉腿，斯哈斯哈~！虽然茉子没芳乃喜欢吃，不过茉子要练忍术,运动量比芳乃还要大。
       茉子的代谢速度肯定非常快，这就会导致她肚子经常胀气，加上长时间不放，肯定也是很臭的，不过众所周知茉子是忍者，所以很能忍，加上紧身裤勒住她的
@@ -386,7 +459,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T5',
         fart_endure: 'T2.5'
       },
-      img_url: './img/galgame_girls/丛雨头像.png',
+      poop: {
+        poop_count_score: 30,
+        poop_count: 'T3.5'
+      },
+      img_url: avatarObj.murasame_avatar,
       introduction: `小丛雨在故事中大多时间都是灵体，不会放屁。但她的肉体是病弱的人设，
       身体不好，肯定产生的屁就很臭，但代谢相对没那么快，也不怎么运动，食量也不大，平时屁量基本没有，
       忍耐屁压力通常不大，她忍耐能力大概一般，而且太幼了确实没啥性趣。
@@ -404,7 +481,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T1',
         fart_endure: 'T1.5'
       },
-      img_url: './img/galgame_girls/蕾娜头像.png',
+      poop: {
+        poop_count_score: 90,
+        poop_count: 'T0.5'
+      },
+      img_url: avatarObj.rena_avator,
       introduction: `蕾娜是北欧人，根据饮食习惯放屁应该比较臭，而且块头大，食量大，屁量也不小，
       但剧情里蕾娜前世还挺强的，按理说忍耐能力不差，我觉得应该仅次于茉子。
       `
@@ -421,7 +502,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T2.5',
         fart_endure: 'T3.5'
       },
-      img_url: './img/galgame_girls/鞍马小春头像.png',
+      poop: {
+        poop_count_score: 70,
+        poop_count: 'T1.5'
+      },
+      img_url: avatarObj.koharu_avator,
       introduction: `将臣可爱的表妹，整个都是可爱风的萝莉，有点小吃货的倾向，
       喜欢吃仙贝这样油炸的食品，屁肯定相对是多且臭的，但不至于像芳乃那样（小春请多吃一些，
       放很多屁在裤袜里给我闻）至于忍耐能力，嗯，应该也不算厉害。我比较推荐的场合，像小春工作时没
@@ -440,7 +525,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3',
         fart_endure: 'T3'
       },
-      img_url: './img/galgame_girls/马庭芦花头像.png',
+      poop: {
+        poop_count_score: 65,
+        poop_count: 'T1.5'
+      },
+      img_url: avatarObj.roka_avator,
       introduction: `芦花姐还是很在意保养自己身材的，不会乱吃东西，也没其他相关素材，
       总结：个人线相对平淡，就喝酒容易醉这块判断下忍耐力可能不太行，但应该还是比身材小的强一点。
       `
@@ -457,7 +546,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3.5',
         fart_endure: 'T1'
       },
-      img_url: './img/galgame_girls/绫地宁宁头像.png',
+      poop: {
+        poop_count_score: 30,
+        poop_count: 'T3.5'
+      },
+      img_url: avatarObj.nene_avatar,
       breathe: './audio/breathe/宁宁喘息.wav',
       introduction: `宁宁，柚子社的0721大帝，不过可惜没有一边0721一边放屁，
       要不然感觉色气值还能加。不过这也能侧面说明宁宁忍耐能力很强，真的只是发情魔女契约太
@@ -477,7 +570,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T2',
         fart_endure: 'T2.5'
       },
-      img_url: './img/galgame_girls/因幡巡头像.png',
+      poop: {
+        poop_count_score: 40,
+        poop_count: 'T3'
+      },
+      img_url: avatarObj.meguru_avatar,
       breathe: './audio/breathe/因幡巡喘息.wav',
       introduction: `美咕噜最可爱了，贫乳翘臀学妹，简直就是太对我xp了。可主动可被动，还是游戏
       大神，这样的女朋友哪里有（柚子社有）？所以说她都愿意肛交了，这也说明至少她的屁味大多数人是可以接受的，
@@ -497,7 +594,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T1.5',
         fart_endure: 'T3.5'
       },
-      img_url: './img/galgame_girls/椎叶䌷头像.png',
+      poop: {
+        poop_count_score: 70,
+        poop_count: 'T1.5'
+      },
+      img_url: avatarObj.tsumugi_avatar,
       introduction: `虽然很可爱，但不是很对我xp。游戏内有刚跟主角团聊天不久就要上厕所的片段，
       可以分析出䌷的屁量很大，需要经常上厕所解决，而忍耐能力也不太行，气味没什么体现，应该一般。
       `
@@ -514,7 +615,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T3',
         fart_endure: 'T0.5'
       },
-      img_url: './img/galgame_girls/户隐憧子头像.png',
+      poop: {
+        poop_count_score: 46,
+        poop_count: 'T2.5'
+      },
+      img_url: avatarObj.toko_avator,
       introduction: `人设很普通的学姐，背景还挺有意思--艾尔普。感觉设定都很普通，屁量方面估计也就正常水平，
       至于气味估计比宁宁还淡，比较作为学生会长比宁宁更受关注，也没人说她的屁怎么。忍耐能力作为前艾尔普应该挺厉害吧。
       `
@@ -531,7 +636,11 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_count: 'T0.5',
         fart_endure: 'T4'
       },
-      img_url: './img/galgame_girls/假屋和奏头像.png',
+      poop: {
+        poop_count_score: 86,
+        poop_count: 'T0.5'
+      },
+      img_url: avatarObj.wakana_avator,
       introduction: `青梅竹马+贫乳萝莉，这个组合还是太棒了，而且还有真女主待遇，指专属mv。
       和奏在游戏里的宁宁二周目，还有因为肚子疼没法登台演出的情节，天哪，多么好的素材被柚子社浪费了。
       我好想看和奏在演出时忍不住扭小屁股，肚子因胀气不断传来咕噜声，同时撅起小屁股，“噗呜~”放屁的样子呀，在她放屁的时候跟她告白。
