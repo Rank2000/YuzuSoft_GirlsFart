@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps, defineEmits } from 'vue'
-
 defineProps({
   girlsArr: {
     required: true, // 必须传
@@ -11,7 +9,7 @@ defineProps({
   }
 })
 
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue', 'hide'])
 
 // console.log(props.modelValue)
 </script>
@@ -35,6 +33,9 @@ const emit = defineEmits(['update:modelValue'])
     <div class="girl" style="color: orange; font-size: 22px; font-weight: 500">
       当前女主：{{ modelValue }}
     </div>
+    <el-button type="primary" plain @click="emit('hide', true)"
+      >纯背景
+    </el-button>
   </div>
 </template>
 
@@ -44,5 +45,12 @@ const emit = defineEmits(['update:modelValue'])
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
+  .girl {
+    margin-left: 10px;
+  }
+}
+
+.el-button {
+  margin-left: 10px;
 }
 </style>

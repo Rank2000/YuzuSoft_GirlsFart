@@ -7,6 +7,8 @@ export const useGirlsStore = defineStore('girl', () => {
     '白雪乃爱',
     '谷风天音',
     '小云雀来海',
+    '高楯奥莉叶',
+    '百里风实花',
     '明月栞那',
     '四季夏目',
     '墨染希',
@@ -45,10 +47,10 @@ export const useGirlsStore = defineStore('girl', () => {
       c_num: 1,
       galgame: '天使☆嚣嚣 RE-BOOT!',
       fart: {
-        fart_smell_score: 75,
+        fart_smell_score: 85,
         fart_count_score: 100,
         fart_endure_score: 15,
-        fart_smell: 'T1',
+        fart_smell: 'T0.5',
         fart_count: 'T0',
         fart_endure: 'T4'
       },
@@ -60,21 +62,21 @@ export const useGirlsStore = defineStore('girl', () => {
       breathe: './audio/breathe/乃爱喘息.wav',
       introduction: `小天使女主角，非常温柔、善良、可爱，喜欢吃薯片，喝可乐，还非常闷骚，这
       么可爱的小乃爱，谁不喜欢呢？作为柚子社吃货属性最突出的女主，在变成人类后，乃爱的屁一定很多，
-      因为她吃的多，屁味方面的话因为代谢快和喜欢吃零食，以及游戏内洗完澡问李空自己臭吗？（乃爱香香的，只有屁可能臭）说明可能稍
-      微臭一点，或者因为乃爱吃得多，她想放屁或拉屎了，屎多了屁肯定也臭，但乃爱身体很好所以不会巨臭。
+      因为她吃的多，屁味方面的话因为代谢快和喜欢吃零食，以及游戏内洗完澡问李空自己臭吗？（乃爱香香的，只有屁可能臭）
+      ，因为乃爱吃得多，而且大口喝可乐也会产生很多气体，她经常想放屁或拉屎，屎多了屁肯定也臭，但乃爱身体很好所以不会巨臭。
       小乃爱的肚子小小的，软软的，加上游戏内有涩涩时忍不住漏尿的cg，而且游戏里有乃爱肚子痛的剧情描写，说明乃爱的忍耐
-      能力差一些，加上翘臀美人萝莉的设定，说真的，好想变成乃爱的胖次贴着她的菊穴，在乃爱肚子咕咕叫，
-      菊穴忍不住凸起放“噗噗噗”的连环屁时候，被她的菊穴凸起亲吻阿。`
+      能力差一些，肠道中全是屁和大便，顶着乃爱的屁眼，忍耐的时候楚楚可怜，加上翘臀美人萝莉的设定，说真的，好想变成乃爱的胖次贴着她的菊穴，在乃爱肚子咕咕叫，
+      菊穴忍不住凸起放“噗噗噗”的连环臭屁时候，被她的菊穴凸起亲吻阿。`
     },
     {
       name: '谷风天音',
       c_num: 2,
       galgame: '天使☆嚣嚣 RE-BOOT!',
       fart: {
-        fart_smell_score: 85,
+        fart_smell_score: 80,
         fart_count_score: 40,
         fart_endure_score: 25,
-        fart_smell: 'T0.5',
+        fart_smell: 'T1',
         fart_count: 'T2.5',
         fart_endure: 'T3.5'
       },
@@ -119,7 +121,7 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_smell_score: 85,
         fart_count_score: 70,
         fart_endure_score: 95,
-        fart_smell: 'T0',
+        fart_smell: 'T0.5',
         fart_count: 'T1.5',
         fart_endure: 'T0'
       },
@@ -252,10 +254,10 @@ export const useGirlsStore = defineStore('girl', () => {
       c_num: 4,
       galgame: '星光咖啡馆与死神之蝶',
       fart: {
-        fart_smell_score: 8,
+        fart_smell_score: 16,
         fart_count_score: 81,
         fart_endure_score: 26,
-        fart_smell: 'T4.5',
+        fart_smell: 'T4',
         fart_count: 'T0.5',
         fart_endure: 'T3.5'
       },
@@ -264,9 +266,10 @@ export const useGirlsStore = defineStore('girl', () => {
         poop_count: 'T1'
       },
       img_url: avatarObj.mei_avatar,
-      introduction: `怎么说呢，冷门xp集合。。。除了泳装翘臀元素没一个感兴趣的。真要说的话，我
-      想看她泳装水中放屁，肯定很棒。身材较小，但运动量大，肯定吃的也多，所以屁不臭但量肯定多。
-      从她连可爱的东西也没抵抗力看，忍耐力较弱，请务必穿泳装在水中让我揉揉肚子，然后欣赏放屁。
+      introduction: `怎么说呢，冷门xp集合。。。但是不要忘了爱衣的本质是偏萝莉体型的大屁股少女。
+      真要说的话我想看她泳装水中放屁，肯定很棒。身材较小，但运动量大，肯定吃的也多，所以屁不臭但量肯定多。
+      游泳有助于肠胃蠕动，所以她经常游泳时候胀气，这时候揉她肚子肯定憋不住，屁放多了还会想拉屎，想象下，
+      这位大屁股的学妹穿着紧身泳衣在你面前捂着屁眼放屁憋大便，从她连可爱的东西也没抵抗力看，忍耐力较弱，请务必穿泳装在水中让我揉揉肚子，然后欣赏放屁。
       `
     },
     {
@@ -318,7 +321,7 @@ export const useGirlsStore = defineStore('girl', () => {
       c_num: 2,
       galgame: 'RIDDLE JOKER',
       fart: {
-        fart_smell_score: 0,
+        fart_smell_score: 0.1,
         fart_count_score: 10,
         fart_endure_score: 80,
         fart_smell: 'T5',
@@ -382,10 +385,10 @@ export const useGirlsStore = defineStore('girl', () => {
       c_num: 5,
       galgame: 'RIDDLE JOKER',
       fart: {
-        fart_smell_score: 0,
-        fart_count_score: 0,
+        fart_smell_score: 5,
+        fart_count_score: 0.1,
         fart_endure_score: 50,
-        fart_smell: 'T5',
+        fart_smell: 'T4.5',
         fart_count: 'T5',
         fart_endure: 'T2.5'
       },
@@ -539,23 +542,24 @@ export const useGirlsStore = defineStore('girl', () => {
       c_num: 1,
       galgame: '魔女的夜宴',
       fart: {
-        fart_smell_score: 16,
-        fart_count_score: 26,
+        fart_smell_score: 26,
+        fart_count_score: 60,
         fart_endure_score: 75,
-        fart_smell: 'T4',
-        fart_count: 'T3.5',
+        fart_smell: 'T3,5',
+        fart_count: 'T2',
         fart_endure: 'T1'
       },
       poop: {
-        poop_count_score: 30,
-        poop_count: 'T3.5'
+        poop_count_score: 100,
+        poop_count: 'T0'
       },
       img_url: avatarObj.nene_avatar,
       breathe: './audio/breathe/宁宁喘息.wav',
       introduction: `宁宁，柚子社的0721大帝，不过可惜没有一边0721一边放屁，
       要不然感觉色气值还能加。不过这也能侧面说明宁宁忍耐能力很强，真的只是发情魔女契约太
       厉害了，发情也能忍住那么长时间，屁自然也不在话下，另外宁宁身边总有人暗恋她，引人注目的
-      情况很多，但没有关于宁宁放屁的传闻，所以说明她的屁不怎么臭、忍耐能力强，另外屁量应该也不大。
+      情况很多，但没有关于宁宁放屁的传闻，所以说明她的屁不怎么臭、忍耐能力强，不过宁宁吃过一大碗拉面，
+      这说明宁宁很能吃，她的肚子里肯定会积攒较多的屁和大便，需要立刻上厕所，要不然就会躺床上了。
       `
     },
     {
@@ -595,7 +599,7 @@ export const useGirlsStore = defineStore('girl', () => {
         fart_endure: 'T3.5'
       },
       poop: {
-        poop_count_score: 70,
+        poop_count_score: 66,
         poop_count: 'T1.5'
       },
       img_url: avatarObj.tsumugi_avatar,

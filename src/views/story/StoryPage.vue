@@ -9,6 +9,9 @@ import { storeToRefs } from 'pinia'
 // 进入页面更换背景用
 const body = document.body
 
+// 控制显示背景
+const isShowBg = ref(false)
+
 // 拿故事
 const storyStore = useStoryStore()
 const { stories } = storeToRefs(storyStore)
@@ -39,21 +42,39 @@ selectGirl()
 </script>
 
 <template>
-  <el-container>
+  <div class="show-button" v-show="isShowBg">
+    <el-button type="primary" plain @click="isShowBg = !isShowBg"
+      >显示故事
+    </el-button>
+  </div>
+
+  <el-container v-show="!isShowBg">
     <el-header>
       <!-- 下拉菜单 + 当前女主-->
       <GirlSelect
         :girlsArr="girlStore.girlsArr"
         v-model="selected"
+        @hide="isShowBg = $event"
       ></GirlSelect>
     </el-header>
     <el-main>
       <StoryShow :story="story"></StoryShow>
     </el-main>
   </el-container>
+  <el-container v-show="isShowBg" style="min-height: 790px"></el-container>
 </template>
 
 <style lang="less" scoped>
+.show-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  .el-button {
+    height: 50px;
+    width: 200px;
+  }
+}
 .el-main {
   opacity: 0.75;
   background-color: #fff;

@@ -22,6 +22,8 @@ import Suzune from '@/assets/background/Suzune.jpg'
 import Noa from '@/assets/background/Noa.jpg'
 import Amane from '@/assets/background/Amane.jpg'
 import Kurumi from '@/assets/background/Kurumi.jpg'
+import Orie from '@/assets/background/Orie.png'
+import Fumika from '@/assets/background/Fumika.png'
 // 欢迎页背景图
 import bgWelcome from '@/assets/background/bg.jpg'
 
@@ -80,6 +82,8 @@ export const backgroundObj = {
   Noa,
   Amane,
   Kurumi,
+  Orie,
+  Fumika,
   bgWelcome
 }
 

@@ -66,7 +66,7 @@ defineExpose({
           </el-col>
           <el-col :span="3">
             {{
-              girlInfo.fart.fart_smell + `(${girlInfo.fart.fart_smell_score})分`
+              girlInfo.fart.fart_smell + `(${girlInfo.fart.fart_smell_score}分)`
             }}
           </el-col>
         </el-row>
@@ -83,7 +83,7 @@ defineExpose({
           </el-col>
           <el-col :span="3">
             {{
-              girlInfo.fart.fart_count + `(${girlInfo.fart.fart_count_score})分`
+              girlInfo.fart.fart_count + `(${girlInfo.fart.fart_count_score}分)`
             }}
           </el-col>
         </el-row>
@@ -106,7 +106,7 @@ defineExpose({
           </el-col>
           <el-col :span="3">
             {{
-              girlInfo.poop.poop_count + `(${girlInfo.poop.poop_count_score})分`
+              girlInfo.poop.poop_count + `(${girlInfo.poop.poop_count_score}分)`
             }}
           </el-col>
         </el-row>
